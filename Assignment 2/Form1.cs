@@ -39,11 +39,33 @@ namespace Assignment_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double R1 = Convert.ToDouble(textBox1.Text);
-            double R2 = Convert.ToDouble(textBox2.Text);
-            double R3 = Convert.ToDouble(textBox3.Text);
-            double Messageboxshow = (R1 + R2 + R3);
-            double decayconstant = 1 / Messageboxshow;
+            try
+            {
+                double R1 = Convert.ToDouble(textBox1.Text);
+                double R2 = Convert.ToDouble(textBox2.Text);
+                double R3 = Convert.ToDouble(textBox3.Text);
+                double doubletotal = (R1 + R2 + R3);
+                MessageBox.Show(doubletotal.ToString("0.00") + "ohms");
+            }
+            catch
+            {
+                MessageBox.Show(" Error the input is incorrect");
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
