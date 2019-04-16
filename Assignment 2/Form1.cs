@@ -43,21 +43,9 @@ namespace Assignment_2
             {
                 double R1 = Convert.ToDouble(textBox1.Text);
                 double R2 = Convert.ToDouble(textBox2.Text);
-                double R3 = 0.0;
-                if (textBox3.Text == "0")
-                    R3 = double.PositiveInfinity;
-                else
-                    R3 = Convert.ToDouble(textBox3.Text);
-                double R4 = 0.0;
-                if (textBox7.Text == "0")
-                    R4 = double.PositiveInfinity;
-                else
-                     R4 = Convert.ToDouble(textBox7.Text);
-                double R5 = 0.0;
-                if (textBox8.Text == "0")
-                    R5 = double.PositiveInfinity;
-                else
-                     R5 = Convert.ToDouble(textBox8.Text);
+                double R3 = Convert.ToDouble(textBox3.Text);
+                double R4 = Convert.ToDouble(textBox7.Text);
+                double R5 = Convert.ToDouble(textBox8.Text);
                 // test the textbox to see if there is an infinity.
                 double doubletotal = (R1 + R2 + R3 + R4 + R5);
                 MessageBox.Show(doubletotal.ToString("0.00") + "ohms");
